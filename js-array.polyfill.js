@@ -242,7 +242,7 @@
 		}
 	}
 	if(!Array.prototype.flatMap) {
-		Array.prototype.$flatMap = function defineArrayFlatMap(callBack) {
+		Array.prototype.flatMap = function defineArrayFlatMap(callBack) {
 			if(typeof callBack === 'function') {
 				var result = this;
 				var resultOther = [];
