@@ -101,7 +101,7 @@
 		Array.prototype.forEach = function defineArrayForEach(callBack) {
 			for(var i = 0; i < this.length; i++) {
 				callBack(this[i], i, this)
-			}
+			}; return this
 		}
 	}
 	if(!Array.prototype.includes) {
